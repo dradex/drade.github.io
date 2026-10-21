@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bounding Box Selector</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="map"></div>
+
+  <div id="panel">
+    <button id="draw-btn">Draw box</button>
+    <div id="current" hidden>
+      <div class="coords" id="coords"></div>
+      <div class="row">
+        <button id="save-btn">Save</button>
+        <button id="delete-btn" class="danger">Delete</button>
+      </div>
+    </div>
+    <div id="saved-wrap" hidden>
+      <h2>Saved</h2>
+      <ul id="saved"></ul>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
